@@ -12,16 +12,8 @@ export class UsersController {
         return this.usersService.create(data)
     }
 
-    @Get()
-    async read() {
-       return this.usersService.list()
-   }
-
-   @Get(':id')
-   async readOne(@Param('id, ParseIntPipe) id: number) ') {
-    return this.usersService.show(id)
-
-   }
+    // @Get()
+    // read()
 
     // @Put()
     // update() 
